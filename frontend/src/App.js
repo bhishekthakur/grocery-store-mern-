@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Header from "./component/Header";
-import toast, { Toaster } from "react-hot-toast";
+import  { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
 import { setDataProduct } from "./redux/productSlide";
 import { useDispatch, useSelector } from "react-redux";
@@ -17,7 +17,7 @@ function App() {
       
       dispatch(setDataProduct(resData))
     })()
-  },[])
+  })
 
   console.log(productData);
   return (

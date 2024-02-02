@@ -3,7 +3,6 @@ import logo from "../asset/download.png";
 import { Link } from "react-router-dom";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsCartFill } from "react-icons/bs";
-import Newproduct from "../page/Newproduct";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutRedux } from "../redux/userSlice";
 import toast from "react-hot-toast";
@@ -31,7 +30,7 @@ function Header() {
       <div className="flex items-center h-full justify-between">
         <Link to={""}>
           <div className="h-10">
-            <img src={logo} className="h-full w-full" />
+            <img src={logo} alt="logo" className="h-full w-full" />
           </div>
         </Link>
 
@@ -51,7 +50,7 @@ function Header() {
           </div>
           <div className=" text-slate-600 " onClick={handleShowMenu}>
             <div className="text-3xl cursor-pointer w-8 h-8 rounded-full overflow-hidden">
-            {userData.image ? <img src={userData.image} className="h-full w-full"/> : <HiOutlineUserCircle />}
+            {userData.image ? <img src={userData.image} alt="image" className="h-full w-full"/> : <HiOutlineUserCircle />}
             </div>
 
             {showMenu && (
