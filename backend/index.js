@@ -10,7 +10,7 @@ app.use(cors(
   {
     origin: ["https://vercel.com/abhisheks-projects-bf8d66db/grocery-store-mern-frontend"],
     method: ["POST", "GET"],
-    crendentials: true
+    crendentials: true,
   }
 ))
 app.use(express.json({limit : "10mb"}))
@@ -33,6 +33,7 @@ mongoose.set('strictQuery',false);
 mongoose.connect(process.env.MONGODB_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
+   useCreateIndex: true,
 })
 .then(()=>console.log("Connected to database"))
 .catch((err)=>console.log("err"))
