@@ -6,19 +6,6 @@ import { useEffect } from "react";
 import { setDataProduct } from "./redux/productSlide";
 import { useDispatch, useSelector } from "react-redux";
 
-function App() {
-  const dispatch = useDispatch()
-  const productData = useSelector((state)=>state.product);
-
-  useEffect(()=>{
-    (async()=>{
-      const res = await fetch(import { Outlet } from "react-router-dom";
-import "./App.css";
-import Header from "./component/Header";
-import toast, { Toaster } from "react-hot-toast";
-import { useEffect } from "react";
-import { setDataProduct } from "./redux/productSlide";
-import { useDispatch, useSelector } from "react-redux";
 
 function App() {
   const dispatch = useDispatch()
