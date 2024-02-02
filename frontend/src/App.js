@@ -13,7 +13,7 @@ function App() {
 
   useEffect(()=>{
     (async()=>{
-      const res = await fetch(grocery-store-mern-lake.vercel.app)
+      const res = await fetch(`${process.env.REACT_APP_SERVER_DOMIN}/product);
       const resData = await res.json()
       
       dispatch(setDataProduct(resData))
