@@ -34,25 +34,4 @@ function App() {
   );
 }
 
-export default App;)
-      const resData = await res.json()
-      
-      dispatch(setDataProduct(resData))
-    })()
-  },[])
-
-  console.log(productData);
-  return (
-    <>
-      <Toaster />
-      <div>
-        <Header />
-        <main className="pt-16 bg-slate-100 min-h-[calc(100vh)]">
-          <Outlet />
-        </main>
-      </div>
-    </>
-  );
-}
-
 export default App;
