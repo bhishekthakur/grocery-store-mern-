@@ -8,7 +8,7 @@ const path = require('path')
 const app = express()
 app.use(cors(
   {
-    origin: ["https://grocery-store-mern.vercel.app"],
+    origin: [""],
     method: ["POST", "GET"],
     crendentials: true
   }
